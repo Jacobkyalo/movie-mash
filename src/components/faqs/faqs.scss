@@ -1,0 +1,97 @@
+.faqs-wrapper {
+    padding: 4.3rem 2.8rem;
+    border-bottom: 8px solid #222;
+
+    h1 {
+        font-size: 3.125rem;
+        text-align: center;
+        line-height: 1.1;
+        margin-bottom: 2rem;
+        font-weight: 900;
+    }
+
+    .faqs-questions {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 65%;
+        margin: auto;
+
+        .question {
+            width: 100%;
+            margin-bottom: 0.5rem;
+
+            .faq-question {
+                padding: 0.8rem 1.2rem;
+                background-color: var(--secondary-color);
+                border-bottom: 2px solid var(--bg-color);
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                h2 {
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+            }
+
+            .faq-answer {
+                background-color: var(--secondary-color);
+                padding: 0.8rem 1.2rem;
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .faqs-form {
+        margin-top: 3rem;
+
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+}
+
+@media ((min-width: 576px) and (max-width: 992px)) {
+    .faqs-wrapper {
+        padding: 4.3rem 1.8rem;
+
+        .faqs-questions {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .faqs-wrapper {
+        padding: 4.3rem 1rem;
+
+        h1 {
+            font-size: 1.7rem;
+        }
+        .faqs-questions {
+            width: 100%;
+
+            .question {
+                .faq-question {
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                .faq-answer {
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
