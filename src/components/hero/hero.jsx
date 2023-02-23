@@ -1,7 +1,7 @@
 import React from "react";
 import "./hero.scss";
-import logo from "../../assets/images/netflix-logo.png";
 import FormComponent from "../forminput/form";
+import Logo from "../Logo";
 import { headerParagraph, headerParagraphSmall } from "../../utils/strings";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
         <header className="header-wrapper">
             <div className="container">
                 <nav className="nav">
-                    <img src={logo} alt="logo" className="logo" />
+                    <Logo />
                     <a
                         style={{
                             textDecoration: "none",
