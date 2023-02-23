@@ -1,0 +1,99 @@
+.login-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("../../assets/images/hero-image.jpg") no-repeat top
+        center/cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--bg-color);
+        opacity: 0.7;
+    }
+
+    .login-content {
+        position: relative;
+        padding: 2rem 3rem;
+
+        .form-wrapper {
+            position: relative;
+            padding: 1.5rem 0 3rem 0;
+            display: flex;
+            justify-content: center;
+
+            form {
+                position: relative;
+                width: 400px;
+                display: block;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 3rem;
+
+                h1 {
+                    font-size: 2.5rem;
+                    margin-bottom: 2rem;
+                }
+
+                .form-group {
+                    margin-bottom: 1.5rem;
+
+                    input {
+                        width: 100%;
+                        padding: 1.1rem 0.9rem;
+                        font-size: 1.1rem;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        background-color: #222;
+                        color: var(--color);
+                    }
+                }
+
+                input[type="submit"] {
+                    background-color: var(--primary-color);
+                    color: var(--color);
+                    width: 100%;
+                    padding: 1.1rem 0.9rem;
+                    font-size: 1.1rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-top: 2rem;
+                    cursor: pointer;
+                }
+
+                .help {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 1rem 0 2rem 0;
+                }
+
+                .alt p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .login-wrapper {
+        background: none;
+
+        .login-content {
+            padding: 2rem 1rem;
+
+            .form-wrapper {
+                padding: 1rem;
+
+                form {
+                    padding: 0.5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
