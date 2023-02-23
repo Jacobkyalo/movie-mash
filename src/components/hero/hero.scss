@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background: url("../../assets//images/hero-image.jpg") no-repeat top
+    background: url("../../assets/images/hero-image.jpg") no-repeat top
         center/cover;
     border-bottom: 8px solid #222;
     padding-bottom: 3rem;
@@ -22,12 +22,6 @@
         justify-content: space-between;
         align-items: flex-start;
         padding: 1.8rem 0;
-
-        img {
-            object-fit: contain;
-            width: 100%;
-            max-width: 8.125rem;
-        }
     }
 
     .header-content {
@@ -53,6 +47,12 @@
             font-weight: 400;
         }
     }
+}
+
+.logo {
+    object-fit: contain;
+    width: 100%;
+    max-width: 8.125rem;
 }
 
 @media ((min-width: 576px) and (max-width:992px)) {
